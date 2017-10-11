@@ -13,6 +13,8 @@ Ansible needs to be installed and configured
 
 ### Current issues
 Dependency to ansible
+There seems to be some type of timing issue and because of this need to run terraform apply twoce
+as the terraform is keeping the status of servers it does not redeploy vms
 
 ## Inputs
 
