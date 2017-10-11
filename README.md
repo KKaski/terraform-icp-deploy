@@ -25,11 +25,11 @@ Dependency to ansible
 
 ## Usage example
 
-#Generate your ssh keys
+Generate your ssh keys
 ssh-keygen -f ssh_key -P ""
-#set the parameters to the terraform.tfvars including the public key you just created
+set the parameters to the terraform.tfvars including the public key you just created
 
-#Refresh the modules
+Refresh the modules
 terraform init
 terraform get
 terraform apply -var-file terraform.tfvars
