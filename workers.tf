@@ -36,7 +36,7 @@ resource "ibm_compute_vm_instance" "master_node" {
   os_reference_code    = "UBUNTU_16_64"
   datacenter           = "${var.datacenter}"
   network_speed        = 1000
-  cores                = 2
+  cores                = 4
   memory               = 8192
   hourly_billing       = true
   private_network_only = false
@@ -74,7 +74,7 @@ resource "ibm_compute_vm_instance" "worker_node" {
   os_reference_code    = "UBUNTU_16_64"
   datacenter           = "${var.datacenter}"
   network_speed        = 1000
-  cores                = 2
+  cores                = 4
   memory               = 8192
   hourly_billing       = true
   private_network_only = false
